@@ -1,0 +1,945 @@
+@import url(null.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Anton&family=Archivo&family=BioRhyme&family=Cormorant&family=Encode+Sans&family=Epilogue&family=Hahmlet&family=Inter&family=JetBrains+Mono&family=Lato&family=Lora&family=Manrope&family=Montserrat&family=Nunito&family=Old+Standard+TT:ital@1&family=Open+Sans&family=Oswald&family=Oxygen&family=Playfair+Display&family=Poppins&family=Raleway&family=Roboto&family=Sora&family=Source+Sans+Pro&family=Spectral&family=Work+Sans&display=swap');
+
+@font-face { 
+   src: url("../fonts/Apercu-Font-Family/Apercu\ Pro\ Light.woff2") format("woff2"),
+   url("../fonts/Apercu-Font-Family/Apercu\ Pro\ Light.woff") format("woff");
+   font-family: apercu;
+   font-display: swap;
+   font-weight: 300;
+   font-style: normal;
+}
+
+@font-face {
+   src: url("../fonts/Apercu-Font-Family/Apercu\ Pro\ Medium.woff2") format("woff2"),
+      url("../fonts/Apercu-Font-Family/Apercu\ Pro\ Medium.woff") format("woff");
+   font-family: apercu;
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   src: url("../fonts/Apercu-Font-Family/Apercu\ Pro\ Bold.woff2.woff2") format("woff2"),
+      url("../fonts/Apercu-Font-Family/Apercu\ Pro\ Bold.woff.woff") format("woff");
+   font-family: apercu;
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+
+
+body{
+   font-family: apercu;
+   font-weight: 300;
+   background-color: whitesmoke;
+   font-size: calc(1vh + 1vw);
+   line-height: calc(1.8vh + 1.8vw);
+}
+
+.header {
+   padding-top: calc(2.8vh + 2.8vw);
+}
+
+.header__title {
+   max-width: 75vw;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: calc(2.8vh + 2.8vw);
+   font-size: calc(4.5vh + 4.5vw);
+   font-weight: 700;
+   /* color: whitesmoke; */
+   color: lightgoldenrodyellow;
+}
+
+[class*="__title"]{
+   line-height: 1.2;
+   letter-spacing: 0.5vh;
+   text-shadow:
+         0 0.0vh 0.1vh black,
+         0 0.1vh 0.1vh #787A80,
+         0 0.2vh 0.1vh #787A80,
+         0 0.3vh 0.1vh #787A80,
+         0 0.4vh 0.1vh #787A80,
+         0 0.5vh 0.1vh #787A80,
+         0 0.6vh 0.1vh whitesmoke,
+         /* 0 0.6vh 0.1vh #787A80, */
+         /* 0 0.7vh 0.1vh #787A80,
+         0 0.8vh 0.1vh #787A80,
+         0 0.9vh 0.1vh #787A80, */
+         0 1vh 0.1vh black,
+         0 1.2vh 0.5vh black,
+         0 1.3vh 0.5vh blue,
+         0 1.4vh 0.5vh #00ffed,
+         0 1.5vh 0.5vh green;
+}
+
+.header__icon {
+   margin-bottom: 1vh;
+}
+
+.icon__items {
+   text-align: center;
+   padding-left: 2vw;
+}
+
+.icon__item {
+   display: inline-block;
+   width: calc(1.2vh + 1.2vw);
+   height: calc(1.2vh + 1.2vw);
+   border: 0.1vh solid #787A80;
+   border-radius: 50%;
+   margin-right: 2vw;
+   transition: 0.1s linear;
+}
+
+.icon__item.fb{
+   background: url(../img/Lesson/icons/fb.svg) no-repeat center / auto 75%;
+}
+
+.icon__item.tw{
+   background: url(../img/Lesson/icons/tw.svg) no-repeat center / auto 75%;
+}
+.icon__item.pin{
+   background: url(../img/Lesson/icons/pin.svg) no-repeat center / auto 75%;
+}  
+.icon__item.in{
+   background: url(../img/Lesson/icons/in.svg) no-repeat center / auto 75%;
+}
+
+.icon__item:hover{
+   outline: 0.2vh solid #00ffed;
+   border: 0 solid blue;
+   box-shadow: 0 0 1.5vh 0.2vh blue,
+   inset 0 0 0.5vh 0.1vh blue;
+   transition: 0.1s linear;
+}
+
+.hedaer__window {
+   box-shadow: inset 0 0 2vh 2vh #f5f5f5;
+}
+
+.window__bg {
+   max-width: 100vw;
+   min-height: 50vh;
+   background:
+   
+   linear-gradient(180deg,
+      rgba(245, 245, 245, 1) 0%,
+      rgba(245, 245, 245, 0.8) 10%,
+      rgba(245, 245, 245, 0.6) 20%,
+      rgba(245, 245, 245, 0.4) 30%,
+      rgba(245, 245, 245, 0.2) 40%,
+      rgba(0, 0, 0, 0) 50%),
+   linear-gradient(0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.8) 10%,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.4) 30%,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0) 50%),
+
+            url(../img/Lesson/bg.jpg) no-repeat center / cover;
+}
+
+[class*="__text"] {
+   max-width: 70vw;
+   margin: 0 auto;
+   text-align: justify;
+}
+
+[class*="nth-"]{
+   margin-bottom: calc(3vh + 3vw);
+}
+
+[class*="fw"]{
+   font-weight: 700;
+   color: lawngreen;
+   text-shadow:
+         0 0 0.1vh black,
+         0 0.1vh 0.1vh blue,
+         0 0.2vh 0.1vh #00ffed,
+         0 0.3vh 0.1vh #00ffed,
+         /* 0 0.4vh 0.1vh green, */
+         0 0.5vh 0.1vh #000000,
+         0 0.7vh 0.5vh #00ffed;
+}
+
+.main{
+   /* margin-bottom: calc(4vh + 4vw); */
+   background-color: black;
+   padding-top: calc(3vh + 3vw);
+   padding-bottom: calc(3vh + 3vw);
+   color: lightgoldenrodyellow;
+   /* color: whitesmoke; */
+   text-align: center;
+   letter-spacing: calc(0.15vh + 0.15vw);
+   text-shadow:
+      0 0.1vh 0.1vh blue,
+      0 0.2vh 0.1vh green,
+      0 0.3vh 0.1vh green,
+      0 0.4vh 0.1vh green,
+      0 0.5vh 0.1vh black,
+      0 0.6vh 0.5vh #00ffed;
+}
+
+.container__text {
+   margin-bottom: calc(4vh + 4vw);
+}
+
+.nth-1,
+.nth-3,
+.nth-6,
+.nth-8,
+.nth-10
+{
+   font-weight: 500;
+   font-size: calc(2vh + 2vw);
+   line-height: calc(2.1vh + 2.1vw);
+}
+
+.nth-12{
+   font-weight: 500;
+   margin-bottom: calc(1.5vh + 1.5vw);
+}
+
+.link {
+   font-weight: 700;
+   color: #00ffed;
+   text-shadow:
+         0 0 0.1vh black,
+         0 0.1vh 0.1vh blue,
+         0 0.2vh 0.1vh #787A80,
+         0 0.3vh 0.1vh #787A80,
+         0 0.4vh 0.1vh green,
+         0 0.5vh 0.1vh black,
+         0 0.6vh 0.5vh #00ffed;
+         transition: 1s;
+}
+
+.link:hover{
+   color: blue;
+   text-shadow:
+         0 0 0.1vh black,
+         0 0.1vh 0.1vh #00ffed,
+         0 0.2vh 0.1vh #00ffed,
+         0 0.3vh 0.1vh #00ffed,
+         0 0.4vh 0.1vh green,
+         0 0.5vh 0.1vh black,
+         0 0.6vh 0.5vh blue;
+         transition: 1s;
+}
+
+.nth-3,
+.nth-6,
+.nth-8,
+.nth-10,
+.nth-12,
+.nth-13
+{
+   /* text-align: left; */
+   margin-left: -5vw;
+}
+
+.nth-5,
+li.nth-5 {
+   margin-bottom: 0;
+}
+/*  */
+
+.container__list {
+   max-width: 100vw;
+   overflow: hidden;
+   margin: 0 auto;
+   margin-bottom: calc(0.5vh + 0.5vw);
+}
+
+.block__link{
+   transition: 0.7s linear 0.2s;
+   border-radius: 2vw;
+}
+
+.block__link:hover{
+   opacity: 0.6;
+   outline: 0.2vh solid #00ffed;
+   border: 0 solid blue;
+   box-shadow: 0 0 1.5vh 0.5vh blue,
+   inset 0 0 1.5vh 0.5vh blue;
+   transition: 0.7s linear 0.2s;
+}
+
+.item__sora {
+   background: black;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(248, 221, 116, 0) 0%,
+         rgba(248, 221, 116, 0.2) 5%,
+         rgba(248, 221, 116, 0.4) 10%,
+         rgba(248, 221, 116, 0.6) 15%,
+         rgba(248, 221, 116, 0.8) 20%,
+         rgba(248, 221, 116, 1) 25%);
+}
+
+.block__title {
+   padding-top: calc(5vh + 5vw);
+   margin-bottom: calc(5vh + 5vw);
+   font-size: calc(4vh + 4vw);
+}
+
+.sora{
+   color: #D342C3;
+   font-family: sora;
+}
+
+.block__link {
+   display: inline-block;
+   min-width: 70vw;
+   min-height:calc(19vw * 1.5);
+}
+
+.link__sora{
+   background: url(../img/Lesson/fonts/sora.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__hahmlet {
+   background: #F8DD74;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(189, 171, 229, 0) 0%,
+         rgba(189, 171, 229, 0.2) 5%,
+         rgba(189, 171, 229, 0.4) 10%,
+         rgba(189, 171, 229, 0.6) 15%,
+         rgba(189, 171, 229, 0.8) 20%,
+         rgba(189, 171, 229, 1) 25%);
+}
+
+.hahmlet {
+   color: #4A51E0;
+   font-family: hahmlet;
+}
+
+.link__hahmlet {
+   background: url(../img/Lesson/fonts/hahmlet.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__jetbrains {
+   background: #BDABE5;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(141, 183, 233, 0) 0%,
+         rgba(141, 183, 233, 0.2) 5%,
+         rgba(141, 183, 233, 0.4) 10%,
+         rgba(141, 183, 233, 0.6) 15%,
+         rgba(141, 183, 233, 0.8) 20%,
+         rgba(141, 183, 233, 1) 25%);
+}
+
+.jetbrains {
+   color: #2C6329;
+   font-family: "JetBrains Mono";
+}
+
+.link__jetbrains {
+   background: url(../img/Lesson/fonts/JetBrains.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__andada{
+   background: #8DB7E9;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(255, 153, 91, 0) 0%,
+         rgba(255, 153, 91, 0.2) 5%,
+         rgba(255, 153, 91, 0.4) 10%,
+         rgba(255, 153, 91, 0.6) 15%,
+         rgba(255, 153, 91, 0.8) 20%,
+         rgba(255, 153, 91, 1) 25%);
+}
+
+.andada{
+   color: #7E4CE3;
+   font-family: "Andada Pro";
+}
+
+.link__andada{
+   background: url(../img/Lesson/fonts/Andada.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__epilogue{
+   background: #FF985B;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(131, 254, 208, 0) 0%,
+         rgba(131, 254, 208, 0.2) 5%,
+         rgba(131, 254, 208, 0.4) 10%,
+         rgba(131, 254, 208, 0.6) 15%,
+         rgba(131, 254, 208, 0.8) 20%,
+         rgba(131, 254, 208, 1) 25%);
+}
+.epilogue{
+   color: #1219C1;
+   font-family: "Epilogue";
+}
+
+.link__epilogue{
+   background: url(../img/Lesson/fonts/Epilogue.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__inter {
+   background: #83FED0;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(248, 221, 116, 0) 0%,
+         rgba(248, 221, 116, 0.2) 5%,
+         rgba(248, 221, 116, 0.4) 10%,
+         rgba(248, 221, 116, 0.6) 15%,
+         rgba(248, 221, 116, 0.8) 20%,
+         rgba(248, 221, 116, 1) 25%);
+}
+
+.inter {
+   color: #285955;
+   font-family: "Inter";
+}
+
+.link__inter {
+   background: url(../img/Lesson/fonts/Inter.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__encode {
+   background: #F8DD74;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(254, 202, 250, 0) 0%,
+         rgba(254, 202, 250, 0.2) 5%,
+         rgba(254, 202, 250, 0.4) 10%,
+         rgba(254, 202, 250, 0.6) 15%,
+         rgba(254, 202, 250, 0.8) 20%,
+         rgba(254, 202, 250, 1) 25%);
+}
+
+.encode {
+   color: #2E4DD9;
+   font-family: "Encode Sans";
+}
+
+.link__encode {
+   background: url(../img/Lesson/fonts/Encode.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__manrope {
+   background: #FECAFA;
+   background-image:
+      linear-gradient(180deg,
+         rgba(170, 209, 214, 0) 0%,
+         rgba(170, 209, 214, 0.2) 5%,
+         rgba(170, 209, 214, 0.4) 10%,
+         rgba(170, 209, 214, 0.6) 15%,
+         rgba(170, 209, 214, 0.8) 20%,
+         rgba(170, 209, 214, 1) 25%);
+}
+
+.manrope {
+   color: #7A59E4;
+   font-family: "Manrope";
+}
+
+.link__manrope {
+   background: url(../img/Lesson/fonts/Manrope.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__lora {
+   background: #AAD1D6;
+   background-image:
+      linear-gradient(180deg,
+         rgba(105, 179, 242, 0) 0%,
+         rgba(105, 179, 242, 0.2) 5%,
+         rgba(105, 179, 242, 0.4) 10%,
+         rgba(105, 179, 242, 0.6) 15%,
+         rgba(105, 179, 242, 0.8) 20%,
+         rgba(105, 179, 242, 1) 25%);
+}
+
+.lora {
+   color: #FFF174;
+   font-family: "Lora";
+}
+
+.link__lora {
+   background: url(../img/Lesson/fonts/Lora.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__biorhyme {
+   background: #69B3F2;
+   background-image:
+      linear-gradient(180deg,
+         rgba(255, 204, 159, 0) 0%,
+         rgba(255, 204, 159, 0.2) 5%,
+         rgba(255, 204, 159, 0.4) 10%,
+         rgba(255, 204, 159, 0.6) 15%,
+         rgba(255, 204, 159, 0.8) 20%,
+         rgba(255, 204, 159, 1) 25%);
+}
+
+.biorhyme {
+   color: #EB2A59;
+   font-family: "BioRhyme";
+}
+
+.link__biorhyme {
+   background: url(../img/Lesson/fonts/BioRhyme.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__playfair {
+   background: #FFCC9F;
+   background-image:
+      linear-gradient(180deg,
+         rgba(231, 93, 93, 0) 0%,
+         rgba(231, 93, 93, 0.2) 5%,
+         rgba(231, 93, 93, 0.4) 10%,
+         rgba(231, 93, 93, 0.6) 15%,
+         rgba(231, 93, 93, 0.8) 20%,
+         rgba(231, 93, 93, 1) 25%);
+}
+
+.playfair {
+   color: #7FF9E2;
+   font-family: "Playfair Display";
+}
+
+.link__playfair {
+   background: url(../img/Lesson/fonts/Playfair.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__archivo {
+   background: #E75D5D;
+   background-image:
+      linear-gradient(180deg,
+         rgba(246, 220, 123, 0) 0%,
+         rgba(246, 220, 123, 0.2) 5%,
+         rgba(246, 220, 123, 0.4) 10%,
+         rgba(246, 220, 123, 0.6) 15%,
+         rgba(246, 220, 123, 0.8) 20%,
+         rgba(246, 220, 123, 1) 25%);
+}
+
+.archivo {
+   color: #55C5B5;
+   font-family: "Archivo";
+}
+
+.link__archivo {
+   background: url(../img/Lesson/fonts/Archivo.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__roboto {
+   background: #F6DC7B;
+   background-image:
+      linear-gradient(180deg,
+         rgba(122, 250, 227, 0) 0%,
+         rgba(122, 250, 227, 0.2) 5%,
+         rgba(122, 250, 227, 0.4) 10%,
+         rgba(122, 250, 227, 0.6) 15%,
+         rgba(122, 250, 227, 0.8) 20%,
+         rgba(122, 250, 227, 1) 25%);
+}
+
+.roboto {
+   color: #7A59E4;
+   font-family: "Roboto";
+}
+
+.link__roboto {
+   background: url(../img/Lesson/fonts/Roboto.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__cormorant {
+   background: #7AFAE3;
+   background-image:
+      linear-gradient(180deg,
+         rgba(122, 89, 228, 0) 0%,
+         rgba(122, 89, 228, 0.2) 5%,
+         rgba(122, 89, 228, 0.4) 10%,
+         rgba(122, 89, 228, 0.6) 15%,
+         rgba(122, 89, 228, 0.8) 20%,
+         rgba(122, 89, 228, 1) 25%);
+}
+
+.cormorant {
+   color: #F9DC76;
+   font-family: "Cormorant";
+}
+
+.link__cormorant {
+   background: url(../img/Lesson/fonts/Cormorant.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__spectral {
+   background: #7A59E4;
+   background-image:
+      linear-gradient(180deg,
+         rgba(234, 92, 90, 0) 0%,
+         rgba(234, 92, 90, 0.2) 5%,
+         rgba(234, 92, 90, 0.4) 10%,
+         rgba(234, 92, 90, 0.6) 15%,
+         rgba(234, 92, 90, 0.8) 20%,
+         rgba(234, 92, 90, 1) 25%);
+}
+
+.spectral {
+   color: #BDABE5;
+   font-family: "Spectral";
+}
+
+.link__spectral {
+   background: url(../img/Lesson/fonts/Spectral.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__raleway {
+   background: #EA5C5A;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(254, 202, 250, 0) 0%,
+         rgba(254, 202, 250, 0.2) 5%,
+         rgba(254, 202, 250, 0.4) 10%,
+         rgba(254, 202, 250, 0.6) 15%,
+         rgba(254, 202, 250, 0.8) 20%,
+         rgba(254, 202, 250, 1) 25%);
+}
+
+.raleway {
+   color: #B72A23;
+   font-family: "Raleway";
+}
+
+.link__raleway {
+   background: url(../img/Lesson/fonts/Raleway.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__work {
+   background: #FECAFA;
+   background-image:
+      linear-gradient(180deg,
+         rgba(61, 133, 218, 0) 0%,
+         rgba(61, 133, 218, 0.2) 5%,
+         rgba(61, 133, 218, 0.4) 10%,
+         rgba(61, 133, 218, 0.6) 15%,
+         rgba(61, 133, 218, 0.8) 20%,
+         rgba(61, 133, 218, 1) 25%);
+}
+
+.work {
+   color: #7AFAE3;
+   font-family: "Work Sans";
+}
+
+.link__work {
+   background: url(../img/Lesson/fonts/WorkSans.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__lato {
+   background: #3D85DA;
+   background-image: 
+   linear-gradient(180deg,
+         rgba(248, 221, 116, 0) 0%,
+         rgba(248, 221, 116, 0.2) 5%,
+         rgba(248, 221, 116, 0.4) 10%,
+         rgba(248, 221, 116, 0.6) 15%,
+         rgba(248, 221, 116, 0.8) 20%,
+         rgba(248, 221, 116, 1) 25%);
+}
+
+.lato {
+   color: #4FC5B5;
+   font-family: "Lato";
+}
+
+.link__lato {
+   background: url(../img/Lesson/fonts/Lato.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__anton {
+   background: #F8DD74;
+   background-image:
+      linear-gradient(180deg,
+         rgba(170, 209, 214, 0) 0%,
+         rgba(170, 209, 214, 0.2) 5%,
+         rgba(170, 209, 214, 0.4) 10%,
+         rgba(170, 209, 214, 0.6) 15%,
+         rgba(170, 209, 214, 0.8) 20%,
+         rgba(170, 209, 214, 1) 25%);
+}
+
+.anton {
+   color: #E95042;
+   font-family: "Anton";
+}
+
+.link__anton {
+   background: url(../img/Lesson/fonts/Anton.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__tt {
+   background: #AAD1D6;
+   background-image:
+      linear-gradient(180deg,
+         rgba(122, 250, 227, 0) 0%,
+         rgba(122, 250, 227, 0.2) 5%,
+         rgba(122, 250, 227, 0.4) 10%,
+         rgba(122, 250, 227, 0.6) 15%,
+         rgba(122, 250, 227, 0.8) 20%,
+         rgba(122, 250, 227, 1) 25%);
+}
+
+.tt {
+   color: #4A61E3;
+   font-family: "Old Standard TT";
+   font-style: italic;
+}
+
+.link__tt {
+   background: url(../img/Lesson/fonts/OldStandardTT.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__oswald {
+   background: #7AFAE3;
+   background-image:
+      linear-gradient(180deg,
+         rgba(74, 97, 227, 0) 0%,
+         rgba(74, 97, 227, 0.2) 5%,
+         rgba(74, 97, 227, 0.4) 10%,
+         rgba(74, 97, 227, 0.6) 15%,
+         rgba(74, 97, 227, 0.8) 20%,
+         rgba(74, 97, 227, 1) 25%);
+}
+
+.oswald {
+   color: #EF8B3F;
+   font-family: "Oswald";
+}
+
+.link__oswald {
+   background: url(../img/Lesson/fonts/Oswald.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__montserrat {
+   background: #4A61E3;
+   background-image:
+      linear-gradient(180deg,
+         rgba(122, 89, 228, 0) 0%,
+         rgba(122, 89, 228, 0.2) 5%,
+         rgba(122, 89, 228, 0.4) 10%,
+         rgba(122, 89, 228, 0.6) 15%,
+         rgba(122, 89, 228, 0.8) 20%,
+         rgba(122, 89, 228, 1) 25%);
+}
+
+.montserrat {
+   color: #A0D0F8;
+   font-family: "Montserrat";
+}
+
+.link__montserrat {
+   background: url(../img/Lesson/fonts/Montserrat.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__poppins {
+   background: #7A59E4;
+   background-image:
+      linear-gradient(180deg,
+         rgba(177, 187, 248, 0) 0%,
+         rgba(177, 187, 248, 0.2) 5%,
+         rgba(177, 187, 248, 0.4) 10%,
+         rgba(177, 187, 248, 0.6) 15%,
+         rgba(177, 187, 248, 0.8) 20%,
+         rgba(177, 187, 248, 1) 25%);
+}
+
+.poppins {
+   color: #EF5B5B;
+   font-family: "Poppins";
+}
+
+.link__poppins {
+   background: url(../img/Lesson/fonts/Poppins.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__nunito {
+   background: #B1BBF8;
+   background-image:
+      linear-gradient(180deg,
+         rgba(234, 92, 90, 0) 0%,
+         rgba(234, 92, 90, 0.2) 5%,
+         rgba(234, 92, 90, 0.4) 10%,
+         rgba(234, 92, 90, 0.6) 15%,
+         rgba(234, 92, 90, 0.8) 20%,
+         rgba(234, 92, 90, 1) 25%);
+}
+
+.nunito {
+   color: #7AFAE3;
+   font-family: "Nunito";
+}
+
+.link__nunito {
+   background: url(../img/Lesson/fonts/Nunito.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__source {
+   background: #EA5C5A;
+   background-image:
+      linear-gradient(180deg,
+         rgba(160, 208, 248, 0) 0%,
+         rgba(160, 208, 248, 0.2) 5%,
+         rgba(160, 208, 248, 0.4) 10%,
+         rgba(160, 208, 248, 0.6) 15%,
+         rgba(160, 208, 248, 0.8) 20%,
+         rgba(160, 208, 248, 1) 25%);
+}
+
+.source {
+   color: #7958E3;
+   font-family: "Source Sans Pro";
+}
+
+.link__source {
+   background: url(../img/Lesson/fonts/Source.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__oxygen {
+   background: #A0D0F8;
+   background-image:
+      linear-gradient(180deg,
+         rgba(239, 139, 63, 0) 0%,
+         rgba(239, 139, 63, 0.2) 5%,
+         rgba(239, 139, 63, 0.4) 10%,
+         rgba(239, 139, 63, 0.6) 15%,
+         rgba(239, 139, 63, 0.8) 20%,
+         rgba(239, 139, 63, 1) 25%);
+}
+
+.oxygen {
+   color: #7A59E4;
+   font-family: "Oxygen";
+}
+
+.link__oxygen {
+   background: url(../img/Lesson/fonts/Oxygen.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__open {
+   background: #EF8B3F;
+   background-image:
+      linear-gradient(180deg,
+         rgba(122, 250, 227, 0) 0%,
+         rgba(122, 250, 227, 0.2) 5%,
+         rgba(122, 250, 227, 0.4) 10%,
+         rgba(122, 250, 227, 0.6) 15%,
+         rgba(122, 250, 227, 0.8) 20%,
+         rgba(122, 250, 227, 1) 25%);
+}
+
+.open {
+   color: #7A59E6;
+   font-family: "Open Sans";
+}
+
+.link__open {
+   background: url(../img/Lesson/fonts/OpenSans.jpg) no-repeat 0 0 / 100%;
+}
+
+.item__bottom {
+   background: black;
+   background-image:
+      linear-gradient(0deg,
+         rgba(122, 250, 227, 0) 0%,
+         rgba(122, 250, 227, 0.2) 20%,
+         rgba(122, 250, 227, 0.4) 40%,
+         rgba(122, 250, 227, 0.6) 60%,
+         rgba(122, 250, 227, 0.8) 80%,
+         rgba(122, 250, 227, 1) 100%);
+}
+
+.text__item{
+   text-align: left;
+   margin-bottom: calc(1.1vh + 1.1vw);
+}
+
+.item__code{
+   font-weight: 500;
+   padding-left: 1vw;
+   margin-left: 2.5vw;
+   border: 0.1vh solid #00ffed;
+   color: lawngreen;
+   text-shadow:
+   0 0 0.5vh black,
+   0 0 1vh #1219C1,
+   0 0 2vh blue,
+   0 0 2.5vh #00ffed;
+   overflow: auto;
+   white-space: nowrap;
+   background:
+   url(../img/Lesson/bg_invert.jpg) no-repeat fixed;
+   background-size: cover;
+}
+
+.item__code:hover{
+   background-image: none;
+}
+
+.head::before{
+   content: "<";
+}
+
+.head::after{
+   content: ">";
+}
+
+.footer{
+   text-align: center;
+}
+
+.footer__wrapper{
+   min-height: 75vh;
+   padding-top: 15vh;
+   background:
+      linear-gradient(0deg,
+         rgba(1, 1, 1, 0) 0%,
+         rgba(1, 1, 1, 0.2) 20%,
+         rgba(1, 1, 1, 0.4) 40%,
+         rgba(1, 1, 1, 0.6) 60%,
+         rgba(1, 1, 1, 0.8) 80%,
+         rgba(1, 1, 1, 1) 100%),
+         
+      url(../img/Lesson/bg_invert.jpg) no-repeat fixed;
+   background-size: cover;
+}
+
+.link__footer {
+   background: url(../img/Lesson/bg_invert.jpg) no-repeat fixed;
+   background-size: cover;
+   margin-bottom: calc(1.5vh + 1.5vw);
+   opacity: 0;
+}
+
+.figma{
+   font-size: calc(7vh + 7vw);
+   text-transform: uppercase;
+   letter-spacing: calc(1.2vh + 1.2vw);
+}
+
+.original__link{
+   font-size: calc(1.2vh + 1.2vw);
+   letter-spacing: calc(0.6vh + 0.6vw);
+   text-transform: uppercase;
+}
+
+.text__footer{
+   font-weight: 500;
+   font-size: calc(1vh + 1vw);
+   line-height: calc(1.5vh + 1.5vw);
+   color: #1219C1;
+   text-shadow: 0 0.1vh 0.5vh #00ffed;
+}
+
+
